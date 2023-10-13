@@ -19,7 +19,10 @@ matrix file can be imported using your favorite scRNA analysis package, for Seur
 
 Example of metadata:
 
+header:
 Cell_Barcode	GEO_ID	Lambo_et_al_ID	Patient_Sample	Library_ID	Counts	Features	Mitochondria_percent	Classified_Celltype	Seurat_Cluster	Malignant	Patient_ID	Biopsy_Origin	Age_Months	Disease_free_days	Clinical_Blast_Percent	Expected_Driving_Aberration	Subgroup	Color_Subgroup	Known_CNVs	Treatment_Outcome	nCount_RNA	nFeature_RNA
+
+per cell:
 AAACCCAAGCGTCAGA-1	PAULSL_Dx_scRNA	AML1	Remission	AML1_DX	6928	1965	8.28521939953811	Monocytes	9	Normal	PAULSL	Marrow	22	2586	NA	KMT2A-PALM2.AKAP2	KMT2A	#8F3FD5	None	Censored	6928	1965
 
 scRNA analysis performed for the paper is heavily reliant on Seurat (https://satijalab.org/seurat/) 
@@ -42,7 +45,10 @@ Fragments can be converted to arrow files using ArchR using the createArrowFiles
 
 Example of metadata:
 
+header:
 Cell_Barcode	GEO_ID	Lambo_et_al_ID	Patient_Sample	Library_ID	Total_fragments	ReadsInTSS	ReadsInPeaks	FractionInPeaks	Classified_Celltype	ArchR_clusters	Malignant	Linked_scRNA_barcode	Linked_scRNA_Sample	Linked_scRNA_confidence_score	Patient_ID	Biopsy_Origin	Age_Months	Disease_free_days	Clinical_Blast_Percent	Expected_Driving_Aberration	Subgroup	Color_Subgroup	Known_CNV	Treatment_Outcome
+
+per cell:
 CCTTAATGTCATTGGT-1	PAULSL_Dx_scATAC	AML1	Diagnosis	AML1_DX	99012	49961	114637	0.578927965416936	B.Cell	C7	Malignant	CATACTTAGTACCCTA-1	AML1_REM	0.736947701403939	PAULSL	Marrow	22	2586	NA	KMT2A-PALM2.AKAP2	KMT2A	#8F3FD5	None	Censored
 
 scATAC analysis performed for the paper is heavily reliant on ArchR (https://www.archrproject.com/) 
